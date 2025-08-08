@@ -24,21 +24,6 @@ h6 {
 }
 
 
-h5:nth-child(1){
-    color: #3b5998;
-    margin-top: 3rem;
-    padding-bottom: 1rem;
-}
-
-h5:nth-child(2){
-    color: #d0358e;
-    padding-bottom: 1rem;
-}
-
-h5:nth-child(3){
-   color: #00a79d;
-}
-
 
 /* Buttons */
 .btn {
@@ -65,7 +50,12 @@ h5:nth-child(3){
     background-color:#116333;
 }
 
+.btn-grey {
+    background-color: lightgrey;
+    border-radius: 0%;
+}
 
+/* HOMEPAGE */
 /* Hero section */
 .hero {
   background-image: url(../images/home-hero-banner.png);
@@ -75,7 +65,8 @@ h5:nth-child(3){
   color: white;
 }
 
-/* Services section */
+
+ /*Services section */
 .services {
    height: auto;
    padding-top: 5rem;
@@ -105,6 +96,53 @@ h5:nth-child(3){
     margin: auto;
 }
 
+/* SERVICES PAGE */
+/* Hero section */
+.hero-s {
+    background-image: url(../images/services-hero-banner-mb.png);
+    background-size: cover;
+    height: 353px;
+    color: white;
+    padding: 4rem;
+}
+
+/* ABOUT PAGE */
+/* Values section */
+.about-image {
+    width: 100%;
+    height: auto;
+    padding-top: 2.5rem;
+    padding-bottom: 5rem;
+}
+
+#values {
+    padding-top: 5rem;
+}
+
+/* CONTACT PAGE */
+#contact {
+    color: white;
+    background-image: url(../images/home-hero-banner.png);
+    padding: 2.5rem;
+}
+
+.contact-img {
+    width: 100%;
+    height: 40rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+
+/* Get In Touch section */
+.git {
+    background-color: #525b7c;
+    color: white;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
 /* Footer Section */
 footer {
     padding-top: 5rem;
@@ -115,3 +153,24 @@ footer p {
     margin-top: 2rem;
     margin-bottom: 3rem;
 }
+
+#h5-fb {
+    color: #3b5998;
+    margin-top: 3rem;
+    padding-bottom: 1.5rem;
+}
+
+#h5-ig {
+    color: #d0358e;
+    padding-bottom: 1.5rem;
+}
+
+#h5-em {
+   color: #00a79d;
+}
+
+/* Media QUERY */
+/* Services section
+.services-a {
+    background-color: #e6e6e6;
+} */
