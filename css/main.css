@@ -1,12 +1,19 @@
 /* CSS starts below */
 
+
+:root {
+    --contact-purple: #a278dc;
+    --bold-font: 800;
+    --svc-blue:  #525b7c;
+}
+
 /* Styling */
 body {
     font-family: 'Nunito';
 }
 
-h1, h2, h3, h4{
-    font-weight: 800;
+h1, h2, h4{
+    font-weight: var(--bold-font);
     padding-bottom: 1rem;
 }
 
@@ -19,11 +26,9 @@ h6 {
     padding-bottom: 1rem;
 }
 
-.svc-h2,.svc-h4 {
-    color: #525b7c;
+.svc-h4 {
+    color: var(--svc-blue);
 }
-
-
 
 /* Buttons */
 .btn {
@@ -33,11 +38,7 @@ h6 {
     padding-right: 1.5rem;
 }
 .btn-primary {
-    background-color: #a278dc;
-    /* border-style: none;
-    border-radius: 1rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem; */
+    background-color: var(--contact-purple);
 }
 
 .footer-btn {
@@ -53,6 +54,23 @@ h6 {
 .btn-grey {
     background-color: lightgrey;
     border-radius: 0%;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: darkgrey;
+  transition: all 0.3s ease;
+}
+
+/* Skiplinks */
+.skip-links{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.skip-links a, .site-footer a {
+  position: absolute;
+  top: -3em;
 }
 
 /* HOMEPAGE */
@@ -92,8 +110,8 @@ h6 {
 .home-image {
     width: 100%;
     height: auto;
-    padding-top: 5rem;
-    margin: auto;
+    /* padding-top: 5rem; */
+
 }
 
 /* SERVICES PAGE */
@@ -102,8 +120,8 @@ h6 {
     background-image: url(../images/services-hero-banner-mb.png);
     background-size: cover;
     height: 353px;
-    color: white;
     padding: 4rem;
+    color: white;
 }
 
 /* ABOUT PAGE */
@@ -154,23 +172,80 @@ footer p {
     margin-bottom: 3rem;
 }
 
-#h5-fb {
+.h5-fb {
     color: #3b5998;
     margin-top: 3rem;
     padding-bottom: 1.5rem;
 }
 
-#h5-ig {
+.h5-ig {
     color: #d0358e;
     padding-bottom: 1.5rem;
 }
 
-#h5-em {
+.h5-em {
    color: #00a79d;
 }
 
-/* Media QUERY */
-/* Services section
-.services-a {
+ /* Media Queries for Deskstop Styles starts below (min-width: 768px) */
+ @media (min-width:768px) {
+     h1 { 
+    font-size: 3rem; 
+     }
+
+     h2 { 
+    font-size: 2.5rem; 
+     }
+
+     h4 {
+     font-size: 1.75rem; 
+     }
+
+     h5 { 
+     font-size: 1.5rem; 
+     }
+
+     h6 { 
+     font-size: 1.125rem; 
+     }
+
+     p {
+        font-size: 1.125rem;
+     }
+
+
+    .footer-btn {
+     flex-direction: row;
+    }
+
+    #footer-btn {
+     margin-top: 1rem;
+     margin-right: 1rem;
+    }
+
+     .hero-s {
+        background-image: url(../images/services-hero-banner-md.png);
+     }
+
+     .svc-content {
+        color: white;
+     }
+
+     .services {
+        padding-bottom: 10rem;
+     }
+
+     .services-a {
     background-color: #e6e6e6;
-} */
+    }
+
+     .git {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+     }
+
+     footer {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+     }
+}
