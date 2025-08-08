@@ -1,0 +1,117 @@
+/* CSS starts below */
+
+/* Styling */
+body {
+    font-family: 'Nunito';
+}
+
+h1, h2, h3, h4{
+    font-weight: 800;
+    padding-bottom: 1rem;
+}
+
+h5 {
+    font-weight: bold;
+}
+
+h6 {
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+
+.svc-h2,.svc-h4 {
+    color: #525b7c;
+}
+
+
+h5:nth-child(1){
+    color: #3b5998;
+    margin-top: 3rem;
+    padding-bottom: 1rem;
+}
+
+h5:nth-child(2){
+    color: #d0358e;
+    padding-bottom: 1rem;
+}
+
+h5:nth-child(3){
+   color: #00a79d;
+}
+
+
+/* Buttons */
+.btn {
+    border-style: none;
+    border-radius: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.btn-primary {
+    background-color: #a278dc;
+    /* border-style: none;
+    border-radius: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; */
+}
+
+.footer-btn {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-secondary {
+    margin-top: 1rem;
+    background-color:#116333;
+}
+
+
+/* Hero section */
+.hero {
+  background-image: url(../images/home-hero-banner.png);
+  background-position: 100%;
+  height: 754px;                   
+  padding: 2rem;
+  color: white;
+}
+
+/* Services section */
+.services {
+   height: auto;
+   padding-top: 5rem;
+   padding-bottom: 5rem;
+}
+
+.svc-box {
+    padding-bottom: 10rem;
+}
+
+.icon-1, .icon-2, .icon-3 {
+    padding-top: 4rem;
+}
+
+/* About Section */
+#about {
+    background-color: #525b7c;
+    color: white;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.home-image {
+    width: 100%;
+    height: auto;
+    padding-top: 5rem;
+    margin: auto;
+}
+
+/* Footer Section */
+footer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+footer p {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
